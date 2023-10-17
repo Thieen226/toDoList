@@ -2,11 +2,12 @@ h1{
     text-align: center;
 }
 .toDoBar{
+    text-align: center;
     width: 50%;
-    margin: 0 30%;
+    margin-inline: auto;
 }
 #toDo{
-    width: 30rem;
+    width: 35rem;
     height: 1.5rem;
     outline: none;
 }
