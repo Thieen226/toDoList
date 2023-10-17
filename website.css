@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+.toDoBar{
+    width: 50%;
+    margin: 0 30%;
+}
+#toDo{
+    width: 30rem;
+    height: 1.5rem;
+    outline: none;
+}
+#add{
+    width: 2rem;
+    height: 2rem;
+    background-color: #4CAF50;
+    border: none;
+    margin: 0 0.5em;
+}
