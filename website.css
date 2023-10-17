@@ -17,3 +17,6 @@ h1{
     border: none;
     margin: 0 0.5em;
 }
+#add:hover{
+    cursor: pointer;
+}
