@@ -21,3 +21,9 @@ h1{
 #add:hover{
     cursor: pointer;
 }
+.container{
+    display: flex;
+    margin: 1em 0;
+    border-radius: 1em;
+    border: 1px solid #dfdfdf;
+}
