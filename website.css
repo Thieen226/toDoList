@@ -10,6 +10,7 @@ h1{
     width: 35rem;
     height: 1.5rem;
     outline: none;
+    font-size: 1em;
 }
 #add{
     width: 2rem;
@@ -24,18 +25,33 @@ h1{
 }
 .container{
     display: flex;
+    justify-content: space-between;
     margin: 1em 0;
     border-radius: 1em;
     border: 1px solid #dfdfdf;
 }
 .pElement{
+    justify-self: space-between;
     margin-inline: 1em;
-
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.buttonDiv{
+    display: flex;
+    flex-direction: row;
 }
 .doneButton,
 .removeButton{
-    width: 5%;
+    width: 100%;
     background-color: white;
     border: none;
     font-size: 1em;
+    margin: 0 1em;
+}
+.doneButton{
+    color:#108e15;
+    font-weight: 500;
+}
+.removeButton{
+    color: rgb(198, 32, 32);
+    font-weight: 500;
 }

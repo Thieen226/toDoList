@@ -13,6 +13,7 @@ function newTasks(){
 //add new elements when clicking the button
         const container = document.createElement("div");
         const pElement = document.createElement("p");
+        const buttonDiv = document.createElement("div");
         const doneButton = document.createElement("button");
         const removeButton = document.createElement("button");
 
@@ -20,19 +21,35 @@ function newTasks(){
         toDosContainer.appendChild(container);
         container.appendChild(pElement);
         pElement.innerText = inputTask;
-        container.appendChild(doneButton);
-        container.appendChild(removeButton);
+        buttonDiv.appendChild(doneButton);
+        buttonDiv.appendChild(removeButton);
+        container.appendChild(buttonDiv);
 
 //adding class to the elements that are created in JavaScript
         container.classList.add("container");
         pElement.classList.add("pElement");
         doneButton.classList.add("doneButton");
         removeButton.classList.add("removeButton");
+        buttonDiv.classList.add("buttonDiv");
 
 //adding text to the buttons
         doneButton.textContent = "Done"
         removeButton.textContent = "Remove"
+
+//cross out the task when clicking done
+    doneButton.addEventListener("click", function(){
+            crossOut(pElement);
+        });
+
+//remove the task when clicking the remove
+    removeButton.addEventListener("click", function(){
+            container.remove();
+        });
+    }
 }
+
+function crossOut(p){
+    p.style.textDecoration = "line-through";
 }
 
 addButton.addEventListener("click", newTasks); 
