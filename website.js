@@ -37,14 +37,17 @@ function newTasks(){
         removeButton.textContent = "Remove"
 
 //cross out the task when clicking done
-    doneButton.addEventListener("click", function(){
-            crossOut(pElement);
-        });
+        doneButton.addEventListener("click", function(){
+                crossOut(pElement);
+            });
 
 //remove the task when clicking the remove
-    removeButton.addEventListener("click", function(){
-            container.remove();
-        });
+        removeButton.addEventListener("click", function(){
+                container.remove();
+            });
+
+//reset the input
+        document.getElementById("toDo").value = "";
     }
 }
 
