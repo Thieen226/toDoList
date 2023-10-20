@@ -23,9 +23,14 @@ function newTasks(){
     doneButton.classList.add("doneButton");
     removeButton.classList.add("removeButton");
 
+//adding text to the buttons
+    doneButton.textContent = "Done"
+    removeButton.textContent = "Remove"
+
 //if you don't put anything in and add it, it will alert this text
 if (inputTask === ""){
     alert("It is blank, you must write something!");
+    return;
 }
 }
 addButton.addEventListener("click", newTasks); 
